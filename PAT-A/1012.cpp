@@ -112,7 +112,7 @@ int main()
 		{
 			if(k==ss[j].id)
 			{
-				Rank min=bestRank(ss[j]);
+				Rank min=maxRank(ss[j]);
 				printf("%d %c\n",min.a,min.b);
 				break;
 			}
