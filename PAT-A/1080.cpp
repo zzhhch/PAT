@@ -90,22 +90,25 @@ int main()
 	//for(int i=0;i<n;i++)
 	//	printf("%d %d\n",ss[i].id,ss[i].ac);
 	int count=0;
+	bool isFirst=true;
 	for(int i=0;i<m;i++)
 	{
 		if(ss[count].ac>100)
 			break;
+		isFirst=true;
 		while(ss[count].ac==i)
 		{
 			
 			if(ss[count].ac>100)
 				break;
-			if(ss[count]!=101)
+			if(isFirst)
 			{
-				printf("%d ",ss[count].id);
+				printf("%d",ss[count].id);
+				isFirst=false;
 			}
 			else
 			{
-				printf("%d",ss[count].id);
+				printf(" %d",ss[count].id);
 			}
 			count++;
 		}
