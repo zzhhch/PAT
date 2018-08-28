@@ -11,11 +11,11 @@ bool cmp(long a,long b)
 
 int main()
 {
-	long n,p,num[maxn];
-	scanf("%ld%ld",&n,&p);
+	long long n,p,num[maxn];
+	scanf("%lld%lld",&n,&p);
 	for(int i=0;i<n;i++)
 	{
-		scanf("%ld",&num[i]);
+		scanf("%lld",&num[i]);
 	}
 	sort(num,num+n,cmp);
 	int i=0,j=n-1;
